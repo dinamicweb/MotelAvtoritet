@@ -348,6 +348,30 @@
 }
 
 @media only screen and (max-width: 319px) {
+  .produkt_catalog {
+    width: 45% !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .produkt_catalog {
+    width: 45% !important;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .produkt_catalog {
+    width: 45% !important;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .produkt_catalog {
+    width: 45% !important;
+  }
+}
+
+@media only screen and (max-width: 319px) {
   #site_info {
     width: 100% !important;
     text-align: center !important;

@@ -15,7 +15,7 @@
 <header>
   <div id="top_menu" class="fixedMenu">
         <!-- Верхнее меню -->
-        <ul>
+        <ul id="big_menu">
   <li>
     <a href="index_page.html" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>О компании</a>
   </li>
@@ -38,8 +38,30 @@
         <div id="phone">
           <p style="margin-top: 0px;">Брянск, ул. Дуки, д. 65 (здание МПСУ)<br>Телефоны: (4832) 33-77-13, 30-60-34</p>        </div>
         <div class="clear"></div>
-      </div>
 
+<nav id="drop_wrap">
+<ul id="little_menu">
+  <li>
+    <a href="index_page.html" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>О компании</a>
+  </li>
+  <li>
+    <a href="index_catalog.html" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>Каталог продукции</a>
+  </li>
+  <li>
+    <a href="/e-catalog/" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>Электронный каталог</a>
+  </li>
+  <li>
+    <a href="/service/" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>Сервис</a>
+  </li>
+  <li>
+    <a href="/credit/" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>Кредит</a>
+  </li>
+  <li>
+    <a href="index_contakt.html" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>Контакты</a>
+  </li>
+</ul>
+</nav>
+      </div>
 
 <div class="slaider">
       <div class="fade">
@@ -59,42 +81,42 @@
 
 <div class="catalog">
   
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
    <a href="index_catalog_prodykt.html"> <img src="image/produkt/1.png">
     <p> Входные двери</p></a>
   </div>
 
-<div id="produkt_catalog">
+<div class="produkt_catalog">
     <a href="index_catalog_prodykt.html"><img src="image/produkt/2.jpg">
     <p> Межкомнатные двери</p></a>
   </div>
 
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
     <a href="index_catalog_prodykt.html"><img src="image/produkt/3.jpg">
     <p>Художественная ковка</p></a>
   </div>
 
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
     <a href="index_catalog_prodykt.html"><img src="image/produkt/4.jpg">
     <p> Межкомнатные перегородки</p></a>
   </div>
 
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
     <a href="index_catalog_prodykt.html"><img src="image/produkt/5.png">
     <p> Входные двери в наличии</p></a>
   </div>
 
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
     <a href="index_catalog_prodykt.html"><img src="image/produkt/6.jpg">
     <p> Межкомнатные белые двери</p></a>
   </div>
 
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
     <a href="index_catalog_prodykt.html"><img src="image/produkt/7.jpg">
     <p> Антикризисное предложение</p></a>
   </div>
 
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
     <a href="index_catalog_prodykt.html"><img src="image/produkt/8.jpg">
     <p> Отделка откосов</p></a>
   </div>
@@ -143,6 +165,21 @@
 });
     });
   </script>
+
+  <script type="text/javascript">
+jQuery(document).ready(function($){
+ 
+/* prepend menu icon */
+$('#drop_wrap').prepend('<div id="menu-icon"><i class="fa fa-list" aria-hidden="true"></i>Menu</div>');
+ 
+/* toggle nav */
+$("#menu-icon").on("click", function(){
+$("#little_menu").slideToggle();
+$(this).toggleClass("active");
+});
+ 
+});
+</script>
 
 </body>
 </html>
