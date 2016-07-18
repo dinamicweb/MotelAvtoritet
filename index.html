@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Мир дверей</title>
-	<meta charset="utf-8">
+  <title>Мир дверей</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/bootsass.css">
   <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 </head>
 <body>
 <header>
-	<div id="top_menu" class="fixedMenu">
-				<!-- Верхнее меню -->
-				<ul>
+  <div id="top_menu" class="fixedMenu">
+        <!-- Верхнее меню -->
+        <ul id="big_menu">
   <li>
     <a href="index_page.html" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>О компании</a>
   </li>
@@ -35,10 +35,34 @@
     <a href="index_contakt.html" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>Контакты</a>
   </li>
 </ul>
-				<div id="phone">
-					<p style="margin-top: 0px;">Брянск, ул. Дуки, д. 65 (здание МПСУ)<br>Телефоны: (4832) 33-77-13, 30-60-34</p>				</div>
-				<div class="clear"></div>
-			</div>
+        <div id="phone">
+          <p style="margin-top: 0px;">Брянск, ул. Дуки, д. 65 (здание МПСУ)<br>Телефоны: (4832) 33-77-13, 30-60-34</p>        </div>
+        <div class="clear"></div>
+
+<nav id="drop_wrap">
+<div id="menu-icon" ><i class="fa fa-list" aria-hidden="true"></i>Меню</div>
+<ul id="little_menu" class="no_active">
+  <li>
+    <a href="index_page.html" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>О компании</a>
+  </li>
+  <li>
+    <a href="index_catalog.html" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>Каталог продукции</a>
+  </li>
+  <li>
+    <a href="/e-catalog/" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>Электронный каталог</a>
+  </li>
+  <li>
+    <a href="/service/" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>Сервис</a>
+  </li>
+  <li>
+    <a href="/credit/" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>Кредит</a>
+  </li>
+  <li>
+    <a href="index_contakt.html" class="menu_center"><i class="fa fa-caret-right" aria-hidden="true"></i>Контакты</a>
+  </li>
+</ul>
+</nav>
+      </div>
 
 
 <div class="slaider">
@@ -56,66 +80,66 @@
 
 <div class="catalog">
   
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
    <a href="index.html"> 
-   <div id="produkt_image">
+   <div class="produkt_image">
    <img src="image/produkt/1.png">
    </div>
     <p> Входные двери</p>
     </a>
   </div>
 
-<div id="produkt_catalog">
+<div class="produkt_catalog">
     <a href="index.html">
-    <div id="produkt_image">
+    <div class="produkt_image">
     <img src="image/produkt/2.jpg">
     </div>
     <p> Межкомнатные двери</p></a>
   </div>
 
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
     <a href="index.html">
-    <div id="produkt_image">
+    <div class="produkt_image">
     <img src="image/produkt/3.jpg">
     </div>
     <p>Художественная ковка</p></a>
   </div>
 
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
     <a href="index.html">
-    <div id="produkt_image">
+    <div class="produkt_image">
     <img src="image/produkt/4.jpg">
     </div>
     <p> Межкомнатные перегородки</p></a>
   </div>
 
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
     <a href="index.html">
-    <div id="produkt_image">
+    <div class="produkt_image">
     <img src="image/produkt/5.png">
     </div>
     <p> Входные двери в наличии</p></a>
   </div>
 
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
     <a href="index.html">
-    <div id="produkt_image">
+    <div class="produkt_image">
     <img src="image/produkt/6.jpg">
     </div>
     <p> Межкомнатные белые двери</p></a>
   </div>
 
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
     <a href="index.html">
-    <div id="produkt_image">
+    <div class="produkt_image">
     <img src="image/produkt/7.jpg">
     </div>
     <p> Антикризисное предложение</p></a>
   </div>
 
-  <div id="produkt_catalog">
+  <div class="produkt_catalog">
     <a href="index.html">
-    <div id="produkt_image">
+    <div class="produkt_image">
     <img src="image/produkt/8.jpg">
     </div>
     <p> Отделка откосов</p></a>
@@ -249,7 +273,14 @@
     });
   </script>
 
+<script type="text/javascript">
+$("#menu-icon").click(function(){
+$("#little_menu").slideToggle();
+$("#little_menu").removeClass("no_active").toggleClass("active");
 
+ 
+});
+</script>
 
 </body>
 </html>

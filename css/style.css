@@ -19,6 +19,11 @@ header #top_menu {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 999;
+  /*
+                       .active {
+                        display: block$im;
+                        background-color: rgba(0, 0, 0, 0.8);
+                       }*/
 }
 
 header #top_menu ul, header #top_menu li {
@@ -50,12 +55,17 @@ header #top_menu li a {
   color: #fff;
 }
 
+header #top_menu .no_active {
+  display: none;
+}
+
 header #top_menu #drop_wrap {
   display: none;
 }
 
 header #top_menu #drop_wrap #little_menu {
   background-color: rgba(0, 0, 0, 0.8);
+  min-height: 16em;
 }
 
 header #top_menu #drop_wrap #little_menu li {
@@ -262,7 +272,7 @@ header #logotype_page {
   text-align: center;
 }
 
-.container .catalog .produkt_catalog #produkt_image {
+.container .catalog .produkt_catalog .produkt_image {
   width: 210px;
   height: 150px;
 }
@@ -278,7 +288,6 @@ header #logotype_page {
 .container .catalog .produkt_catalog p {
   text-align: center;
   font-weight: bold;
-  
 }
 
 .container .catalog .produkt_catalog img {
