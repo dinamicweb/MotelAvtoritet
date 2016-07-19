@@ -63,8 +63,10 @@ $im: !important;
   @include respond-to(handhelds) { @include no_display; };
   @include respond-to(wide-handhelds) { @include no_display; };
   @include respond-to(tablets) { @include no_display; };
+}
 
-
+.slaid_page {
+   @include respond-to(netbook) { margin-right: 5%$im; };
 }
 
 #drop_wrap {
