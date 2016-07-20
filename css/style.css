@@ -292,7 +292,8 @@ header #logotype_page {
 
 .container .catalog .produkt_catalog img {
   border: 5px solid  #fff;
-  width: 100%;
+  width: 225px;
+  height: 150px;
 }
 
 .container .catalog_prodykt {
@@ -307,6 +308,18 @@ header #logotype_page {
 
 .cart_prodykt h2 {
   text-align: left;
+}
+
+.cart_prodykt .internal {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.cart_prodykt .external {
+  width: 50%;
+  float: left;
+  text-align: center;
 }
 
 .prodykt_option {
@@ -371,7 +384,7 @@ header #logotype_page {
 }
 
 #prod {
-  width: 39%;
+  width: 100%;
   text-align: center;
   float: left;
   color: #000;
@@ -383,11 +396,9 @@ header #logotype_page {
 }
 
 #zoom_prodykt1 {
-  width: 85px;
-  height: 150px;
-  float: left;
+  width: 105px;
+  height: 220px;
   border: 3px solid #fff;
-  margin: 15px;
 }
 
 footer {
